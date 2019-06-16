@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+Name: Benjamin Cruse
+Date Created: 06/10/2019
+Most recent revision:
+-->
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Bottle Cap Alley</h1>
+        </header>
+
+        <nav>
+          <hr />
+            <p><a href="index.html">Home</a>&nbsp&nbsp&nbsp&nbsp<a href="menu.html">Menu</a>&nbsp&nbsp&nbsp&nbsp<a href="contact.html">Contact Us</a></p>
+          <hr />
+        </nav>
+        <form action="submit.html" method="post">
+          <label for="name">Name:&nbsp</label>
+          <input type="text" id="name" name="name"><br>
+          <label for="email">Email:&nbsp</label>
+          <input type="text" id="name" name="email" ><br>
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" name="phone"><br>
+          <label for="reason">Reason for Inquary:</label>
+
+          <select class="reason" name="contact">
+            <option value="catering" selected>Catering</option>
+            <option value="party">Private Party</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select>
+          <br>
+
+          <label for="info">Additional Information:</label>
+          <textarea id="info" name="info"></textarea>
+          <br>
+
+            <label>Have you been to the restaurant?</label>
+            <input type="radio" id="choice1" name="questionnaire" value="no">
+            <label for="no">No</label>
+            <input type="radio" id="choice2" name="questionnaire" value="yes">
+            <label for="yes">Yes</label>
+            <br>
+
+            <label>Best days to contact you:</label>
+            <input type="checkbox" id="monday" name="day" value="monday">
+            <label for="monday">M</label>
+            <input type="checkbox" id="tuesday" name="day" value="tuesday">
+            <label for="tuesday">T</label>
+            <input type="checkbox" id="wednesday" name="day" value="wednesday">
+            <label for="wednesday">W</label>
+            <input type="checkbox" id="thursday" name="day" value="thursday">
+            <label for="thursday">Th</label>
+            <input type="checkbox" id="friday" name="day" value="friday">
+            <label for="friday">F</label>
+            <br>
+
+            <input type="submit" name="submit" value="Send Request">
+
+
+
+        </form>
+
+        <footer>
+          <hr />
+          <p>2485 Avondale Haslet Road, Haslet, Texas, 76247</p>
+          <p>(817)-465-1100</p>
+        </footer>
+    </body>
+</html
