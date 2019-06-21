@@ -7,62 +7,115 @@ Most recent revision:
 <html lang="en">
     <head>
         <title>Menu</title>
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <style media="screen">
+          table{
+            border-collapse: separate;
+            border-spacing: 0 20px;
+            margin: 0 auto;
+          }
+          td{
+            vertical-align: top;
+            max-width: 250px;
+            text-align: center;
+          }
+          .drinks td{
+            text-align: left;
+          }
+          .main-background{
+            background-color: #232323;
+            color: #fcfcfc;
+          }
+          .drinks tr:nth-child(even) {
+            background-color: #302f2f;
+          }
+          .drinks{
+            border-collapse: separate;
+            border-spacing: 0 5px;
+            text-align: left;
+          }
+        </style>
     </head>
 
     <body>
         <header>
-            <h1>Bottle Cap Alley</h1>
+            <h1>Bottlecap Alley</h1>
         </header>
 
         <nav>
           <hr />
-            <p><a href="index.html">Home</a>&nbsp&nbsp&nbsp&nbsp<a href="menu.html">Menu</a>&nbsp&nbsp&nbsp&nbsp<a href="contact.html">Contact Us</a></p>
+            <a class="btn" href="index.html">Home</a>&nbsp&nbsp&nbsp&nbsp
+            <a class="btn" style="text-decoration: none" href="menu.html">Menu</a>&nbsp&nbsp&nbsp&nbsp
+            <a class="btn" href="contact.html">Contact Us</a>
           <hr />
         </nav>
-        <table>
-          <tr>
-            <td><strong>Burger and Fries</strong><br>An American Classic!
-              <br>Your choice - with or without cheese
-              <br>Pickle, Onion, tomato, and lettuce
-              <br>Served with our house-made chips
-              <br>$8.25</td>
-            <td><strong>Hot Dog and Chips</strong>
-              <br>A summer Classic!
-              <br>Your choice - white or wheat bun
-              <br>Relish, mustard, and ketchup
-              <br>Served with our house-made chips
-              <br>$7.95</td>
-            <td><strong>Italian Sausage and Peppers</strong>
-              <br>An All-Time Favorite
-              <br>Your choice - mild or spicy Cole Slaw
-              <br>Served with garlic masher
-              <br>$10.95</td>
-          </tr>
-          <tr>
-            <td><strong>Tenderloin Sandwich and Chips!</strong>
-              <br>Really Hits the Spot!
-              <br>Plain or Sesame Seed button
-              <br>Pickle, onion, tomato, and lettuce
-              <br>Served with our house-made chips
-              <br>$8.95</td>
-            <td><strong>House Salad</strong>
-              <br>On the Lighter Side
-              <br>Your choice - with or without cheese
-              <br>Iceberg lettuce, tomatoes, peppers
-              <br>Thousand Island or Ranch
-              <br>Dressing served with a dinner roll
-              <br>$6.95</td>
-            <td><strong>Brisket Sandwich and Fries</strong>
-              <br>A Taste of Texas!
-              <br>Smoked Brisket on thick-cut
-              <br>Texas Toast
-              <br>Cole Slaw
-              <br>Served with our famous thick-cut
-              <br>french fries
-              <br>$7.95</td>
-          </tr>
-        </table>
-
+        <article class="main-background">
+          <table class="food">
+            <tr>
+              <td><strong>Burger and Fries</strong>
+                <br>An American Classic!
+                <br>Your choice - with or without cheese
+                <br>Pickle, Onion, tomato, and lettuce
+                <br>Served with our house-made chips
+                <br>$8.25</td>
+              <td><strong>Hot Dog and Chips</strong>
+                <br>A summer Classic!
+                <br>Your choice - white or wheat bun
+                <br>Relish, mustard, and ketchup
+                <br>Served with our house-made chips
+                <br>$7.95</td>
+              <td><strong>Italian Sausage and Peppers</strong>
+                <br>An All-Time Favorite
+                <br>Your choice - mild or spicy Cole Slaw
+                <br>Served with garlic masher
+                <br>$10.95</td>
+            </tr>
+            <tr>
+              <td><strong>Tenderloin Sandwich and Chips!</strong>
+                <br>Really Hits the Spot!
+                <br>Plain or Sesame Seed button
+                <br>Pickle, onion, tomato, and lettuce
+                <br>Served with our house-made chips
+                <br>$8.95</td>
+              <td><strong>House Salad</strong>
+                <br>On the Lighter Side
+                <br>Your choice - with or without cheese
+                <br>Iceberg lettuce, tomatoes, peppers
+                <br>Thousand Island or Ranch
+                <br>Dressing served with a dinner roll
+                <br>$6.95</td>
+              <td><strong>Brisket Sandwich and Fries</strong>
+                <br>A Taste of Texas!
+                <br>Smoked Brisket on thick-cut
+                <br>Texas Toast
+                <br>Cole Slaw
+                <br>Served with our famous thick-cut
+                <br>french fries
+                <br>$7.95</td>
+            </tr>
+          </table>
+          <table class="drinks" width="35%">
+            <tr>
+              <th>Beverages</th>
+            </tr>
+            <tr>
+              <td>Root Beer</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Bottled Water</td>
+              <td>$1.25</td>
+            </tr>
+            <tr>
+              <td>Lemonade</td>
+              <td>$1.00</td>
+            </tr>
+            <tr>
+              <td>Iced Tea</td>
+              <td>$1.25</td>
+            </tr>
+          </table>
+        </article>
         <footer>
           <hr />
           <p>2485 Avondale Haslet Road, Haslet, Texas, 76247</p>

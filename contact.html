@@ -6,28 +6,102 @@ Most recent revision:
 -->
 <html lang="en">
     <head>
-        <title>Contact Us</title>
+      <title>Contact Us</title>
+      <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+      <style media="screen">
+        form{
+          text-align: center;
+        }
+        .required{
+          font-weight: bold;
+        }
+        label, fieldset{
+            font-size: 1.1em;
+            text-align: top;
+        }
+        input[type=text] {
+            border: 2px solid #0d1f2d;
+            width: 30%;
+            padding: 4px 4px;
+            margin: 12px 0;
+            box-sizing: border-box;
+            font-size: 1.1em;
+        }
+        select{
+          border: 2px solid #0d1f2d;
+          width: 30%;
+          padding: 4px 4px;
+          margin: 12px 98px 12px 0;
+          box-sizing: border-box;
+          font-size: 1.1em;
+        }
+        label.top{
+          vertical-align: top;
+          display: inline-block;
+          padding: 15px 0 0;
+        }
+        textarea {
+            width: 30%;
+            height: 200px;
+            padding: 12px 20px;
+            margin: 12px 115px 12px 0;
+            box-sizing: border-box;
+            border: 2px solid #0d1f2d;
+            border-radius: 3px;
+            background-color: #fff;
+            resize: none;
+        }
+        input[type=radio]{
+          margin: 12px 0px 12px 15px;
+          padding: 12px 100px;
+        }
+        .radios{
+          margin-right: 37%;
+        }
+        input[type=checkbox]{
+          margin: 12px 0px 12px 2%;
+          padding: 12px 100px;
+        }
+        .checkboxes{
+            margin-right: 19%;
+        }
+        input[type=submit] {
+            font-size: 1.2em;
+            background-color: #546a7b;
+            color: #fef9ff;
+            padding: 4px 8px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+
+        }
+        input[type=submit]:hover {
+            background-color: #f2eded;
+            color: #546a7b;
+        }
+      </style>
     </head>
 
     <body>
         <header>
-            <h1>Bottle Cap Alley</h1>
+            <h1>Bottlecap Alley</h1>
         </header>
 
         <nav>
           <hr />
-            <p><a href="index.html">Home</a>&nbsp&nbsp&nbsp&nbsp<a href="menu.html">Menu</a>&nbsp&nbsp&nbsp&nbsp<a href="contact.html">Contact Us</a></p>
+            <a class="btn" href="index.html">Home</a>&nbsp&nbsp&nbsp&nbsp
+            <a class="btn" href="menu.html">Menu</a>&nbsp&nbsp&nbsp&nbsp
+            <a class="btn" style="text-decoration: none" href="contact.html">Contact Us</a>
           <hr />
         </nav>
         <form action="submit.html" method="post">
-          <label for="name">Name:&nbsp</label>
+          <label class="required" for="name">Name:&nbsp&nbsp</label>
           <input type="text" id="name" name="name"><br>
-          <label for="email">Email:&nbsp</label>
+          <label class="required" for="email">Email:&nbsp&nbsp</label>
           <input type="text" id="name" name="email" ><br>
-          <label for="phone">Phone:</label>
+          <label class="required" for="phone">Phone:&nbsp&nbsp</label>
           <input type="text" id="phone" name="phone"><br>
-          <label for="reason">Reason for Inquary:</label>
 
+          <label class="required" for="reason">Reason for Inquary:&nbsp&nbsp</label>
           <select class="reason" name="contact">
             <option value="catering" selected>Catering</option>
             <option value="party">Private Party</option>
@@ -36,18 +110,20 @@ Most recent revision:
           </select>
           <br>
 
-          <label for="info">Additional Information:</label>
+          <label class="top" for="info">Additional Information:&nbsp&nbsp</label>
           <textarea id="info" name="info"></textarea>
           <br>
-
-            <label>Have you been to the restaurant?</label>
+          <div class="radios">
+            <label class="required">Have you been to the restaurant?&nbsp&nbsp</label>
             <input type="radio" id="choice1" name="questionnaire" value="no">
-            <label for="no">No</label>
+            <label for="no">No&nbsp&nbsp&nbsp&nbsp&nbsp</label>
             <input type="radio" id="choice2" name="questionnaire" value="yes">
             <label for="yes">Yes</label>
             <br>
+          </div>
 
-            <label>Best days to contact you:</label>
+          <div class="checkboxes">
+            <label class="required">Best days to contact you:&nbsp&nbsp</label>
             <input type="checkbox" id="monday" name="day" value="monday">
             <label for="monday">M</label>
             <input type="checkbox" id="tuesday" name="day" value="tuesday">
@@ -59,8 +135,9 @@ Most recent revision:
             <input type="checkbox" id="friday" name="day" value="friday">
             <label for="friday">F</label>
             <br>
+          </div>
 
-            <input type="submit" name="submit" value="Send Request">
+          <input type="submit" name="submit" value="Send Request">
 
 
 

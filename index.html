@@ -6,28 +6,50 @@ Most recent revision:
 -->
 <html lang="en">
     <head>
-        <title>Home Page</title>
+      <title>Home Page</title>
+      <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+      <style>
+        .justify {
+          text-align: justify;
+          text-justify: inter-word;
+          margin: 2% auto 0%;
+          padding: 2% 0 3%;
+          max-width: 450px;
+          color: #fcfcfc;
+          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+        .hero-image {
+          background-image: url("images/wood5.jpg"); /* The image used */
+          background-color: #cccccc; /* Used if the image is unavailable */
+          height: 500px; /* You must set a specified height */
+          background-position: center; /* Center the image */
+          background-repeat: no-repeat; /* Do not repeat the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+        }
+      </style>
     </head>
 
     <body>
         <header>
-            <h1>Pizza Hut</h1>
+            <h1>Bottlecap Alley</h1>
         </header>
 
         <nav>
-          <hr />
           <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
-            <p><a href="index.html">Home</a>&nbsp&nbsp&nbsp&nbsp<a href="menu.html">Menu</a>&nbsp&nbsp&nbsp&nbsp<a href="contact.html">Contact Us</a></p>
-          <hr />
+            <a class="btn" style="text-decoration: none" href="index.html">Home</a>&nbsp&nbsp&nbsp&nbsp
+            <a class="btn" href="menu.html">Menu</a>&nbsp&nbsp&nbsp&nbsp
+            <a class="btn" href="contact.html">Contact Us</a>
         </nav>
-        <img src="images/homeBanner.png" alt="Banner with pizza"/>
-        <p>This Restaurent serves pizza, pasta, sandwiches, wings,
-           and more. With the lights dimmed down and the classic rock
-           music popping. You're sure to have a great time with your
-           family, friends, or team.</p>
-
+        <article class="hero-image">
+          <div style="text-align: center">
+            <img style="padding-top: 20px" src="images/CrossRoads-banner-1.jpg" alt="Banner with pizza"/>
+          </div>
+          <p class ="justify"><strong>This Restaurant serves Pizza, Pasta, Sandwiches, Wings, Desserts
+             and more. With the lights dimmed down and the classic rock
+             music popping. You're sure to have a great time with your
+             family, friends, or team.</strong></p>
+        </article>
         <footer>
-          <hr />
           <p>2485 Avondale Haslet Road, Haslet, Texas, 76247</p>
           <p>(817)-465-1100</p>
         </footer>

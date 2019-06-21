@@ -1,0 +1,17 @@
+header, footer{
+    background-color: #ba2828;
+    color: #fef9ff;
+    height: 50px;
+    text-align: center;
+    padding: 20px 10px 40px 10px;
+    font-family: Arial;
+}
+nav {
+  border-top: thin #5b7d87 solid;
+  border-bottom: thin #5b7d87 solid;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+nav .btn:hover {
+  font-weight: bold;
+}
